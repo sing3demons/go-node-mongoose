@@ -1,0 +1,40 @@
+@uri=http://localhost:8080
+
+GET {{uri}}/products/65ed91cdde088ddc9a469d2b HTTP/1.1
+
+###
+
+POST {{uri}}/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 25,
+  "description": "This is a test description"
+}
+
+###
+DELETE {{uri}}/products/65ec8130879e656bdc78bd8c HTTP/1.1
+
+###
+GET {{uri}}/users HTTP/1.1
+
+###
+POST {{uri}}/productsLanguage HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 25,
+  "description": "This is a test description"
+}
+
+###
+POST http://localhost:3000 HTTP/1.1
+Content-Type: application/json
+
+[{
+  "name": "John Doe",
+  "age": 25,
+  "description": "This is a test description"
+}]
